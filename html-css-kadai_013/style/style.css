@@ -1,0 +1,37 @@
+.menu {
+  padding: 20px; /* 必要に応じて数値を調整する */
+}
+
+.menu-item {
+  margin-top: 10px; /* 必要に応じて数値を調整する */
+}
+
+.menu {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.menu {
+  font-family: 'YourFont', sans-serif; /* フォントを適用する */
+  background-color: #d8a15d; /* 背景色をお手本の色に */
+}
+
+.menu-item {
+  color: #fff; /* 必要に応じて色の調整 */
+}
+
+/* ×ボタン */
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* 修正: 値を適切に変更 */
+  background-color: transparent;
+  border: none;
+  z-index: 101; /* 必要に応じて重なり順を考慮 */
+}
+
+@media screen and (min-width: 768px) {
+  header #menu-sp {
+    display: none;
+  }
+}
