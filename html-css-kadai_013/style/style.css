@@ -1,37 +1,42 @@
-.menu {
-  padding: 20px; /* 必要に応じて数値を調整する */
+/*PC、スマホ共通スタイル*/
+body {
+  font-family: "Souce sans Pro","Hiragino Kaku Gothic ProN", Meiryo, Arial,sans-serif;
 }
 
-.menu-item {
-  margin-top: 10px; /* 必要に応じて数値を調整する */
+p {
+  font: size 15px;
 }
 
-.menu {
-  box-sizing: border-box;
+#main-visual>img {
   width: 100%;
 }
 
-.menu {
-  font-family: 'YourFont', sans-serif; /* フォントを適用する */
-  background-color: #d8a15d; /* 背景色をお手本の色に */
+/*=================
+PC用のスタイル
+===================
+＠media screen and (min-width: 768px) {
+    /* 横幅設定　*/
+    body {
+      max-width: 1080px;
+      min-width: 960px;
+      margin: 0 auto 0 auto;
+    }
+
+/* ヘッダー　*/
+header {
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu-item {
-  color: #fff; /* 必要に応じて色の調整 */
+/*ナビゲーションのレイアウト*/
+#nav-pc {
+  text-align: right;
+  font-size: 14px;
+  padding-top: 15px;
 }
 
-/* ×ボタン */
-#close {
-  position: absolute;
-  top: 20px;
-  right: 20px; /* 修正: 値を適切に変更 */
-  background-color: transparent;
-  border: none;
-  z-index: 101; /* 必要に応じて重なり順を考慮 */
-}
-
-@media screen and (min-width: 768px) {
-  header #menu-sp {
-    display: none;
-  }
+/*ナビゲーションのリンクの装飾設定*/
+#nav-pc>a {
+  text-decoration: none;
+  margin-left: 20px
 }
