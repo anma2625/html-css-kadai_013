@@ -13,8 +13,8 @@ p {
 
 /*=================
 PC用のスタイル
-===================
-＠media screen and (min-width: 768px) {
+===================*/
+@media screurl(http://127.0.0.1:5500/index)en and (min-width: 768px) {
     /* 横幅設定　*/
     body {
       max-width: 1080px;
@@ -39,4 +39,5 @@ header {
 #nav-pc>a {
   text-decoration: none;
   margin-left: 20px
+}
 }
