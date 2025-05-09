@@ -37,10 +37,25 @@ header {
   padding-top: 15px;
 }
 
+
+
 /*ナビゲーションのリンクの装飾設定*/
 #nav-pc>a {
   text-decoration: none;
   margin-left: 20px
+}
+
+#nav-pc>a:link{
+  color: #0d0d0d;
+}
+
+#nav-pc>a:visited{
+  color: #0d0d0d;
+}
+
+#nav-pc>a:hover{
+  color: #0d0d0d;
+  text-decoration: underline;
 }
 
 #menu-sp {
@@ -50,15 +65,22 @@ header {
 #nav-sp {
   display: none;
 }
+
+/* ハンバーガーメニューの中身を非表示にする　*/
+#nav-pc {
+  display: none;
+}
+
 /*========================
   スマートフォン用のスタイル
 =========================*/
+@media screen and (max-width: 767px) {
 body {
   min-width: 375px;
   margin: 0;
 }
 
-@media screen and (max-width: 767px) {
+
   /*　pc用ナビゲーション非表示に　*/
   #nav-pc {
     display: none;
@@ -70,16 +92,33 @@ body {
     padding: 0;
   }
 
+  /* ハンバーガーメニューを表示させたい　*/
+  /* liタグの「・」を消す */
+  #nav-sp ul {
+    list-style: none;
+  }
+
+  /*spのメニューのaタグの色を変える*/
+  #nav-sp a {
+    color:white
+  }
+
+  /* ハンバーガーメニューの開くボタンを非表示にする*/
+　#menu-sp {
+  display: block;
+}
+
   /* スマホ用ナビゲーション　*/
   #nav-sp {
-    background-color: #ce933e;
-    position: absolute;
+    position: fixed;
     left: 0;
+    right: 0;
     top: 0;
     height: 100%;
     width: 100%;
     display: none;
     z-index: 100;
+    background-color: #ce933e;
   }
   
   #nav-sp ul {
@@ -99,7 +138,7 @@ body {
 
   /*　ナビゲーションメニュー用ロゴ　*/
   #logo-sp {
-    margin: 80px 0px;
+    margin: 80px 0 30px 20px;
   }
   #nav-sp a {
     display: block;
@@ -122,7 +161,7 @@ body {
   #nav-sp.menu {
     text-decoration: none;
     display: block;
-    margin: 0 20px 0 20px;
+    margin: 0 20px;
     height: 44px;
     font-size: 16px;
     background-image: url("images/arrow.png");
