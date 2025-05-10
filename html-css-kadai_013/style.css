@@ -66,10 +66,7 @@ header {
   display: none;
 }
 
-/* ハンバーガーメニューの中身を非表示にする　*/
-#nav-pc {
-  display: none;
-}
+
 
 /*========================
   スマートフォン用のスタイル
@@ -104,7 +101,7 @@ body {
   }
 
   /* ハンバーガーメニューの開くボタンを非表示にする*/
-　#menu-sp {
+  #menu-sp {
   display: block;
 }
 
@@ -143,22 +140,22 @@ body {
   #nav-sp a {
     display: block;
   }
-  #nav-spa:link {
+  #nav-sp a:link {
     color: #ffffff;
   }
   
-  #nav-spa:visited {
+  #nav-sp a:visited {
     color: #ffffff;
   }
-  #nav-spa:hover {
+  #nav-sp a:hover {
     color: #ffffff;
     text-decoration: underline;
   }
-  #nav-spa:active {
+  #nav-sp a:active {
     color: #ffffff;
   }
 
-  #nav-sp.menu {
+  #nav-sp .menu {
     text-decoration: none;
     display: block;
     margin: 0 20px;
